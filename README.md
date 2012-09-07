@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+	.strategy(
+		:long_open => [[:sma, 10, :crosses_above, :sma, 15], :and, [:sma, 11, :crosses_above, :sma, 16]],
+		:long_close => [[:sma, 10, :crosses_above, :sma, 15], :and, [:sma, 11, :crosses_above, :sma, 16]],
+		:short_open => [[:sma, 10, :crosses_above, :sma, 15], :and, [:sma, 11, :crosses_above, :sma, 16]],
+		:short_close => [[:sma, 10, :crosses_above, :sma, 15], :and, [:sma, 11, :crosses_above, :sma, 16]],
+		:target => 0.1,
+		:stop_loss => 0.2,
+		)
 
 ## Contributing
 
